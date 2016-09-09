@@ -10,36 +10,72 @@ h1 {
 	text-align : center;
 	text-decoration : underline;
 	font-weight : bold;
-	font-size : 25pt;
+	font-size : 30pt;
 	letter-spacing :  0.2em;
 }
 
 h2 {
-	color : #A4A400;
-	font-family : Century Gothic, Futura, Verdana, sans-serif;
+	color : #802A2A;
+	font-family : "times new roman", Futura, Verdana, sans-serif;
 	text-align : center;
-	font-weight : normal;
-	font-size : 18pt;
-	text-decoration : underline;
-	letter-spacing :  0.2em;
+	font-weight : bold;
+	font-size : 22pt;
+	text-decoration : underline; 
 }
 
 h3 {
 	color : #A4A400;
-	font-family : "New Times Roman";
+	font-family : "times new roman";
 	font-style : italic;
 	text-align : center;
 	font-size : 14pt;
 }
 
+.block {
+	margin-left : 11.5cm; 
+	width : 702px;
+	height : 952px;
+	margin-right : 2cm; 
+	border : 2px solid lightgrey;
+    box-shadow : 2px 2px 2px gainsboro;
+    background-image : url(http://oritoeic.com/wp-content/uploads/Menu-Background-toeic.jpg);
+    text-align : center;
+}
+
+.details {
+	margin-left : 8.5mm;
+	margin-right : 8.5mm;
+}
+
+.introduction {
+	margin-top : 0;
+}
+
+.first {
+	margin : 0;
+	height : 150px;
+	background-image : url(https://irp-cdn.multiscreensite.com/02d2ac0f/dms3rep/multi/desktop/jumboedit-2500x681.jpg);
+	background-repeat : repeat;
+}
+
 blockquote {
-	font-family :  Georgia, Garamond, serif;
-	font-weight : normal;
 	text-align : justify;
-	color : #404040;
-	font-size : 14pt;
+	font-family : "Lucida handwriting";
+	font-style : italic;
+	color : #5E2612	;
 }
 
 a {
-  color:#A4A400;
+    color : #A4A400;
+    border : 0;
+    text-decoration:none
+}
+
+img {
+	border : 0;
+	border-radius : 25px;
+}
+
+.mark {
+	float : left;
 }
