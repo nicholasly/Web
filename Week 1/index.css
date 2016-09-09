@@ -1,17 +1,9 @@
-body {
-	background-image : url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg);
-	background-repeat : repeat;
-	background-attachment: fixed;
-}
-
 h1 {
-	color : #A4A400;
+	color : #FFFFFF;
 	font-family : Century Gothic, Futura, Verdana, sans-serif;
 	text-align : center;
-	text-decoration : underline;
 	font-weight : bold;
-	font-size : 30pt;
-	letter-spacing :  0.2em;
+	font-size : 75pt;
 }
 
 h2 {
@@ -19,26 +11,25 @@ h2 {
 	font-family : "times new roman", Futura, Verdana, sans-serif;
 	text-align : center;
 	font-weight : bold;
-	font-size : 22pt;
-	text-decoration : underline; 
+	font-size : 50pt;
 }
 
 h3 {
-	color : #A4A400;
+	color : #000000;
 	font-family : "times new roman";
-	font-style : italic;
-	text-align : center;
-	font-size : 14pt;
+	text-align : right;
+	margin-right: 280pt;
+	font-size : 38pt;
 }
 
 .block {
-	margin-left : 11.5cm; 
-	width : 702px;
-	height : 952px;
-	margin-right : 2cm; 
+	width : 1560px;
+	height : 830px;
+	margin-right : 	2cm; 
 	border : 2px solid lightgrey;
     box-shadow : 2px 2px 2px gainsboro;
-    background-image : url(http://oritoeic.com/wp-content/uploads/Menu-Background-toeic.jpg);
+    background-image : url(http://4.bp.blogspot.com/-3Dzq_kEuE9k/VlYj5yIbNRI/AAAAAAAANgg/rJ1LEFwBX0s/s1600/printable%2Brecipe%2Bcard%2B1.jpg	);
+    background-size : 1560px, 830px; 
     text-align : center;
 }
 
@@ -53,13 +44,18 @@ h3 {
 
 .first {
 	margin : 0;
-	height : 150px;
-	background-image : url(https://irp-cdn.multiscreensite.com/02d2ac0f/dms3rep/multi/desktop/jumboedit-2500x681.jpg);
+	width : 1560px;
+	height : 800px;
+	background-image : url(https://www.eatthe80.com/wp-content/uploads/2015/09/veggiebg.jpg);
+	background-size : 1560px, 800px; 
 	background-repeat : repeat;
 }
 
 blockquote {
+	margin-right : 300px;
+	margin-left : 300px;
 	text-align : justify;
+	font-size : 19pt;
 	font-family : "Lucida handwriting";
 	font-style : italic;
 	color : #5E2612	;
