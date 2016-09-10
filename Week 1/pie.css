@@ -3,6 +3,7 @@ body {
 	background-repeat : repeat;
 	background-attachment: fixed;
 }
+/* set the background */
 h1 {
 	color : #A4A400;
 	font-family : Century Gothic, Futura, Verdana, sans-serif;
@@ -13,7 +14,7 @@ h1 {
 	font-size : 22pt;
 	letter-spacing :  0.2em;
 }
-
+/* set the h1 */
 h2 {
 	color : #A4A400;
 	font-family : Century Gothic, Futura, Verdana, sans-serif;
@@ -24,28 +25,56 @@ h2 {
 	text-decoration : underline;
 	letter-spacing :  0.2em;
 }
-
+/* set the h2 */
 p {
 	color : #404040;
 	font-size : 11pt;
 	font-family :  Georgia, Garamond, serif;
 }
-
+/* set the paragraph */
 a {
 	color : #A4A400;
 }
-
+/* set the link color */
 blockquote {
   font-style : italic;
   background-color : #FFFFC8;
 }
-
-ul {
-  list-style-image: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif);
+/* set the blockquote font and background */
+.first {
+	list-style-image:
+    	url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif);
 }
-
+/* set the first ul */
+.second {
+	list-style-image :
+		url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif);
+	margin-top : 0;
+    margin-bottom : 0;
+}
+/* set the second ul */
+.third {
+	list-style-image :
+		url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif);
+	margin-top : 0;
+	margin-bottom : 0;
+}
+/* set the third ul */
 li {
-  color : #404040;
-  font-size : 11pt;
-  font-family : Georgia, Garamond, serif;
+	color : #404040;
+	font-size : 11pt;
+	font-family : Georgia, Garamond, serif;
 }
+/* set the li */
+.check1 {
+	width : 88px;
+	height : 31px; 
+	border : 0;
+}
+/* set the html check picture size */
+.check2 {
+	border : 0;
+	width : 88px;
+	height : 31px
+}
+/* set the css check picture size */

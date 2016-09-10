@@ -32,16 +32,16 @@ h3 {
     background-size : 1560px, 830px; 
     text-align : center;
 }
-
+/* Setting for the first screen */
 .details {
 	margin-left : 8.5mm;
 	margin-right : 8.5mm;
 }
-
+/* set the position of words */
 .introduction {
 	margin-top : 0;
 }
-
+/* no edge */
 .first {
 	margin : 0;
 	width : 1560px;
@@ -50,7 +50,7 @@ h3 {
 	background-size : 1560px, 800px; 
 	background-repeat : repeat;
 }
-
+/* set the background of the block */
 blockquote {
 	margin-right : 300px;
 	margin-left : 300px;
@@ -58,20 +58,38 @@ blockquote {
 	font-size : 19pt;
 	font-family : "Lucida handwriting";
 	font-style : italic;
-	color : #5E2612	;
+	color : #5E2612;
 }
-
+/* make the detail words neat */
 a {
     color : #A4A400;
     border : 0;
     text-decoration:none
 }
-
-img {
+/* no underline for the link */
+.picture {
 	border : 0;
 	border-radius : 25px;
+	width : 500px;
+	height : 320px;
 }
-
+/* set the size of food picture */
+.check1 {
+	border : 0;
+	border-radius : 25px;
+	width : 88px;
+	height : 31px;
+	border : 0;
+}
+/* set the size of html checck */
+.check2 {
+	border : 0;
+	border-radius : 25px;
+	width : 88px;
+	height : 31px;
+	border : 0;
+}
+/* set the size of css checck */
 .mark {
 	float : left;
 }
