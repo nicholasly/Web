@@ -1,3 +1,10 @@
+body {
+	background-image : url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg);
+	background-repeat : repeat;
+	background-attachment: fixed;
+}
+/* set the background */
+
 h1 {
 	color : #FFFFFF;
 	font-family : Century Gothic, Futura, Verdana, sans-serif;
@@ -24,13 +31,13 @@ h3 {
 
 .block {
 	width : 1560px;
-	height : 830px;
-	margin-right : 	2cm; 
-	border : 2px solid lightgrey;
-    box-shadow : 2px 2px 2px gainsboro;
+	height : 876px;
+	margin-left : auto;
+    margin-right : auto;
     background-image : url(http://4.bp.blogspot.com/-3Dzq_kEuE9k/VlYj5yIbNRI/AAAAAAAANgg/rJ1LEFwBX0s/s1600/printable%2Brecipe%2Bcard%2B1.jpg	);
-    background-size : 1560px, 830px; 
+    background-size : 1600px, 876px;
     text-align : center;
+    background-repeat : no-repeat;
 }
 /* Setting for the first screen */
 .details {
@@ -43,12 +50,13 @@ h3 {
 }
 /* no edge */
 .first {
-	margin : 0;
-	width : 1560px;
-	height : 800px;
+	margin-left : auto;
+    margin-right : auto;
+	width : 1600px;
+	height : 876px;
 	background-image : url(https://www.eatthe80.com/wp-content/uploads/2015/09/veggiebg.jpg);
-	background-size : 1560px, 800px; 
-	background-repeat : repeat;
+	background-size : 1600px, 876px; 
+	background-repeat : no-repeat;
 }
 /* set the background of the block */
 blockquote {
@@ -64,7 +72,7 @@ blockquote {
 a {
     color : #A4A400;
     border : 0;
-    text-decoration:none
+    text-decoration : none;
 }
 /* no underline for the link */
 .picture {
@@ -90,6 +98,3 @@ a {
 	border : 0;
 }
 /* set the size of css checck */
-.mark {
-	float : left;
-}
