@@ -1,0 +1,156 @@
+body {
+	background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/background.png?version=1&modificationDate=1268896312000);
+	font-size: 8pt;
+	font-family: Verdana, Tahoma, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+/* set the body */
+#banner {
+	background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/bannerbackground.png?version=1&modificationDate=1268896312000);
+	background-repeat: repeat-x;
+	background-size: auto 50px;
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	text-align: center;
+}
+/* set the banner */
+#TMNT {
+	font-size: 24pt;
+	font-weight: bold;
+	font-family: Tahoma, Verdana, sans-serif;
+	text-align: center;
+}
+/* set the heading*/
+#board {
+	position: relative;
+	width: 800px;
+	border: 4px solid gray;
+	padding-bottom: 0;
+	margin: auto;
+	overflow: hidden;
+}
+/* set the overall content area */
+#leftcomment {
+	margin-left: 11px;
+	width: 258.5px;
+	float: left;
+}
+/* set the left comment part*/
+#rightcomment {
+	margin-left: 11px;
+	width: 258.5px;
+	float: left;
+	margin-right:11px;
+}
+/* set the right comment part*/
+#rightpart {
+	float: right;
+	width: 250px;
+	margin-bottom: 0;
+	background-color: #A2B964;
+	font-family: Arial, sans-serif;
+	font-size: 8pt;
+}
+/* set the right section */
+#rightpart dt {
+	font-weight: bold;
+}
+dl dt {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+dt {
+	margin-top: 1em;
+}
+/* set the dl and dt */
+#rotten {
+	background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/rottenbackground.png?version=1&modificationDate=1268896385000);
+	background-repeat: repeat-x;
+}
+/* set the rotten*/
+#rotten img {
+	height: 83px;
+}
+/* set the image in rotten */
+#percentage {
+	font-size: 48pt;
+	font-weight: bold;
+	color: red;
+	font-family: Verdana, Tahoma, sans-serif;
+	vertical-align: top;
+}
+/* set the size and the font of "30%"*/
+#reviewstotal {
+	font-size: 8pt;
+	color: white;
+	vertical-align: 180%;
+}
+/* set the size and the font of "80 reviews total"*/
+#pagenumber {
+	margin-top: 0;
+}
+/* set the bar below*/
+#pagenumber p {
+	position: absolute;
+	text-align: center;
+	background-color: #A2B964;
+	bottom: 0%;
+	width: 800px;
+	padding: 5px;
+	margin: 0;
+}
+/* set the bar */
+.comment {
+	background-color:  #E1D697;
+	border: 2px solid gray;
+	padding: 8px;
+	margin: 0;
+}
+/* set the comment box */
+.comment p {
+	margin: 0;
+	overflow: hidden;
+}
+/* set the paragraph inside the box */
+.quote {
+	font-size: 8pt;
+	font-weight: bold;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+/* set the the font inside the quote */
+img.icon {
+	margin-right: 5px;
+	margin-bottom: 0;
+	float: left;
+}
+/* set the paragraph inside the icon */
+.critic {
+	margin-bottom: 3em;
+}
+/* set the critic */
+.job {
+	font-style: italic;
+}
+/* set the job */
+.critic img {
+	float: left;
+	margin-right: 5px;
+}
+/* set the image of critic */
+#valid {
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border: 0;
+}
+/* set the valid*/
+.check {
+	border : 0;
+	width : 88px;
+	height : 31px;
+	border : 0;
+}
+/* set the size of html check */
