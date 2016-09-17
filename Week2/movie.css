@@ -88,18 +88,12 @@ dt {
 	vertical-align: 180%;
 }
 /* set the size and the font of "80 reviews total"*/
-#pagenumber {
-	margin-top: 0;
-}
-/* set the bar below*/
-#pagenumber p {
-	position: absolute;
-	text-align: center;
-	background-color: #A2B964;
-	bottom: 0%;
-	width: 800px;
-	padding: 5px;
-	margin: 0;
+footer {
+  width: 100%;
+  float: left;
+  padding: 5px;
+  text-align: center;
+  background-color: #A2B964;
 }
 /* set the bar */
 .comment {
