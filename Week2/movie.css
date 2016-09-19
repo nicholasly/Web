@@ -33,6 +33,7 @@ body {
 }
 /* set the overall content area */
 #leftcomment {
+	padding-top: 5px;
 	margin-left: 11px;
 	width: 258.5px;
 	float: left;
@@ -40,6 +41,7 @@ body {
 /* set the left comment part*/
 #rightcomment {
 	margin-left: 11px;
+	padding-top: 5px;
 	width: 258.5px;
 	float: left;
 	margin-right:11px;
@@ -76,16 +78,16 @@ dt {
 /* set the image in rotten */
 #percentage {
 	font-size: 48pt;
-	font-weight: bold;
-	color: red;
-	font-family: Verdana, Tahoma, sans-serif;
-	vertical-align: top;
+    font-weight: bold;
+    color: red;
+    position: relative;
+    vertical-align: 18%;
 }
 /* set the size and the font of "30%"*/
 #reviewstotal {
 	font-size: 8pt;
 	color: white;
-	vertical-align: 180%;
+	vertical-align: 125%;
 }
 /* set the size and the font of "80 reviews total"*/
 footer {
@@ -100,12 +102,13 @@ footer {
 	background-color:  #E1D697;
 	border: 2px solid gray;
 	padding: 8px;
-	margin: 0;
+	margin-top: 11px;
+	line-height: 13px;
+	overflow: hidden;
 }
 /* set the comment box */
 .comment p {
 	margin: 0;
-	overflow: hidden;
 }
 /* set the paragraph inside the box */
 .quote {
@@ -121,7 +124,9 @@ img.icon {
 }
 /* set the paragraph inside the icon */
 .critic {
+	margin-top: 10px;
 	margin-bottom: 3em;
+    overflow: hidden;
 }
 /* set the critic */
 .job {
@@ -134,11 +139,9 @@ img.icon {
 }
 /* set the image of critic */
 #valid {
-	float: right;
 	position: fixed;
-	bottom: 0;
-	right: 0;
-	border: 0;
+    right: 0;
+    bottom: 0;
 }
 /* set the valid*/
 .check {
