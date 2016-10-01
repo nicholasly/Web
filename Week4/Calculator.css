@@ -1,0 +1,153 @@
+#board {
+	background-color: ;
+	width: 326px;
+	position: relative;
+	top: 150px;
+    margin: auto;
+    background-color: #FFFFFF;
+    border: 2px solid lightgrey;
+	padding: 20px;
+	overflow: hidden;
+}
+
+button {
+	width: 64px;
+	height: 35px;
+	text-align: center;
+	margin-left: 12px;
+	margin-top: 12px;
+	overflow: hidden;
+	border: 1px solid lightgrey;
+}
+
+#lastRow {
+	margin-bottom: 20px;
+}
+
+.num {
+	background-color: #F1F1F1;
+}
+
+.opeartor {
+	background-color: #D1D1D1;
+}
+
+.equal {
+	background-color: #4A8CF6;
+}
+
+button .key {
+	font-size: 12pt;
+	font-family: arial, sans-serif;
+	text-transform: none;
+	vertical-align: middle;
+}
+
+#inputs {
+	height: 33px;
+	width: 306px;
+	border: 1px solid lightgrey;
+	margin-left: 10px;
+	margin-bottom: 13px; 
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+
+#screen {
+	height: 100%;
+	width: 390px;
+	float: right;
+	text-align: right;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 19pt;
+	border: none; 
+	background-color: #FFFFFF;
+}
+
+#input {
+	vertical-align: middle;
+}
+
+#lastCalculation {
+	height: 25px;
+	width: 306px;
+	margin-left: 10px;
+	text-align: right;
+	font-family: arial, sans-serif;
+	font-size: 16pt;
+	border: none;
+}
+
+#last {
+	float: right;
+	height: 20px;
+	width: 400px;
+	margin-left: 10px;
+	text-align: right;
+	font-family: arial, sans-serif;
+	color: #8AA0C2;
+	font-size: 12pt;
+	border: none;
+	background-color: white;
+}
+
+#calculator {
+	font-size: 80pt;
+	font-family: arial;
+	font-weight: 600;
+	position: relative;
+	margin: auto;
+	top: 123px;
+	left: -95px;
+	width: 318px;
+}
+
+#C {
+	color: #4285F4;
+	margin-right: 0px;
+}
+
+#a1 {
+    color: #EA4335;
+    margin-right: 0px;
+}
+
+#l1 {
+	color: #FBBC05;
+	margin-right: 0px;
+}
+
+#c {
+	color: #4285F4;
+	margin-right: 0px;
+}
+
+#u {
+	color: #34A853;
+	margin-right: 0px;
+}
+
+#l2 {
+	color: #EA4335;
+	margin-right: 0px;
+}
+
+#a2 {
+	color: #FBBC05;
+	margin-right: 0px;
+}
+
+#t {
+	color: #34A853;
+	margin-right: 0px;
+}
+
+#o {
+	color: #4285F4;
+	margin-right: 0px;
+}
+
+#r {
+	color: #EA4335;
+	margin-right: 0px;
+}
