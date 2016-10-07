@@ -113,6 +113,7 @@ function calculation() {
 	//  when error occurs directly set 0
 	try {
 		var r = eval(temp);
+		r = Math.round(r * 1000000000) / 1000000000;
 		if (ope == 1) {
 			if (r == "Infinity" || temp == "0 / 0") {
 				error = 1;
