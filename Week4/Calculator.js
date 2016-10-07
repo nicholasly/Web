@@ -1,11 +1,12 @@
 var init = 0; // a variable recording the condition of initialization 
 var cal = 0;  // a variable recording the condition of calculation
 var error = 0;  // a variable recording error
-var ope = 0;   // a variable in case of the duplication of operator 
+var ope = 0;   // a variable showing if the operator has been added 
 var current = "0";  //  the expression put in the input screen
-var pre;  //  the expression put in the last screen
+var pre = "Ans = 0";  //  the expression put in the last screen
 var dot = 0;  //  a variable in case of the duplication of dot
 var dnum = 1; //  a variable to make sure there is a num after the dot
+var odu = 0;  //  a varible in case of the duplication of the operator
 
 function input1(value) {
 	if (init == 0) {
@@ -31,9 +32,11 @@ function input1(value) {
 	else current = current + value;
 	// when something was input before
 	if (dot == 1) dnum = 1;
+	odu = 0;
 }
 //  function to input the number
 function input2(value) {
+	if (odu == 1) return;
 	if (init == 0) {
 		pre = "Ans = 0";
 		init = 1;
@@ -52,6 +55,7 @@ function input2(value) {
 	cal = 0;
 	ope = 1;
 	dot = 0;
+	odu = 1;
     /*  the dot and calculation is allowed
     but the operator cannot be dupliacte  */
 }
@@ -135,7 +139,7 @@ function calculation() {
 		}
 		//  when the operator has not been added
 		cal = 1;
-		//  the calculatio has been done
+		//  the calculation has been done
 	}
 	catch(e) {
 		if (e instanceof SyntaxError) {
@@ -150,8 +154,39 @@ function calculation() {
 	}
 }
 
-function click_in(e) { 
-	var t = e.target;
+document.addEventListener('keydown', function(e) {
+    var evt = e.keyCode;
+    if ((evt >= 48 && evt <= 57) && !e.shiftKey) {
+    	input1(String.fromCharCode(evt));
+    } else if (evt === 187 && e.shiftKey) {
+    	input2("+");
+    } else if (evt === 189 && e.shiftKey) {
+    	input2("-");
+    } else if (evt == 56 && e.shiftKey) {
+    	input2("*");
+    } else if ((evt == 111 && !e.shiftKey) && (evt == 191 && !e.shiftKey)) {
+    	input2("/");
+    } else if (evt == 190 && !e.shiftKey) {
+    	input3(".");
+    } else if (evt == 57 && e.shiftKey) {
+     	input1("(");
+    } else if (evt == 48 && e.shiftKey) {
+    	input1(")");
+    } else if ((evt == 8 || evt == 46) && !e.shiftKey) {
+    	cancelChar();
+    } else if ((evt == 13 || evt == 187) && !e.shiftKey) {
+    	calculation();
+    }
+    if (current.length > 22) {
+		alert("You cannot add any character!");
+		return;
+	}
+    document.getElementById("input").innerHTML = current;
+	document.getElementById("last").innerHTML = pre;
+}, false);
+
+function click_in(event) { 
+	var t = event.target;
 	//  get the target of event
 	if (t.className ===	"normal num") {
 		input1(t.value);
@@ -170,7 +205,7 @@ function click_in(e) {
 		input1(t.value);
 	}
 	//  use different functions to deal with various situations
-	if (current.length > 32) {
+	if (current.length > 22) {
 		alert("You cannot add any character!");
 		return;
 	}
