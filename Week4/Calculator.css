@@ -1,5 +1,5 @@
+/* google-style calculator */
 #board {
-	background-color: ;
 	width: 326px;
 	position: relative;
 	top: 150px;
@@ -14,6 +14,8 @@ button {
 	width: 64px;
 	height: 35px;
 	text-align: center;
+	font-size: 14pt;
+	font-family: arial, sans-serif;
 	margin-left: 12px;
 	margin-top: 12px;
 	overflow: hidden;
@@ -24,23 +26,16 @@ button {
 	margin-bottom: 20px;
 }
 
-.num {
+.normal {
 	background-color: #F1F1F1;
 }
 
-.opeartor {
+.other {
 	background-color: #D1D1D1;
 }
 
 .equal {
 	background-color: #4A8CF6;
-}
-
-button .key {
-	font-size: 12pt;
-	font-family: arial, sans-serif;
-	text-transform: none;
-	vertical-align: middle;
 }
 
 #inputs {
@@ -60,7 +55,7 @@ button .key {
 	text-align: right;
 	font-family: helvetica, arial, sans-serif;
 	font-size: 19pt;
-	border: none; 
+	border: none;
 	background-color: #FFFFFF;
 }
 
@@ -93,7 +88,7 @@ button .key {
 
 #calculator {
 	font-size: 80pt;
-	font-family: arial;
+	font-family: arial, sans-serif;
 	font-weight: 600;
 	position: relative;
 	margin: auto;
@@ -138,16 +133,16 @@ button .key {
 }
 
 #t {
-	color: #34A853;
-	margin-right: 0px;
-}
-
-#o {
 	color: #4285F4;
 	margin-right: 0px;
 }
 
-#r {
+#o {
 	color: #EA4335;
+	margin-right: 0px;
+}
+
+#r {
+	color: #34A853;
 	margin-right: 0px;
 }
