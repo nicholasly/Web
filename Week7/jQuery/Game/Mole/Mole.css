@@ -1,0 +1,145 @@
+/* I do not use radio input because radio input is 
+different in different browsers so I use div to make a 
+similiar radiobox */
+/* There are some problems when you zoom out the screen */
+* {
+	font-family: Arial, helvetica, sans-serif;
+}
+/* set the font */
+
+#headtitle {
+	text-align: center;
+	position: relative;
+}
+
+#title {
+	font-size: 30pt;
+}
+/* set the size of the title */
+
+#guide {
+	margin-top: -22px;
+	font-size: 22pt;
+	margin-bottom: 0; 
+}
+/* set the subtitle */
+
+#board {
+	position: relative;
+	margin: 15px auto;
+	width: 442px;
+	height: 84px;
+	border: none;
+	overflow: hidden;
+}
+
+#operation {
+	position: absolute;
+	width: 180px;
+	height: 50px;
+}
+/* the area to click the button */
+
+button {
+	height: 20px;
+	background-color: #FFFFFF;
+	border: 2px solid lightgrey;
+}
+
+#StopAndStop {
+	width: 198px;
+	height: 24px;
+	font-size: 10pt;
+	text-align: center;
+}
+/* set the start button */
+
+#GameOver {
+	margin-top: 5px;
+	width: 168px;
+	height: 24px;
+	font-size: 12pt;
+	text-align: left;
+}
+
+/* set the gameover button */
+
+#name {
+	position: absolute;
+    margin-left: 49%;
+	width: 64px;
+	height: 66px;
+	font-size: 16pt;
+	text-align: right;
+}
+
+#scoreboard {
+	position: absolute;
+    margin-left: 64%;
+	width: 195px;
+	height: 66px;
+}
+/* the area for recording the time and socre */
+
+#Time {
+	width: 146px;
+	height: 20px;
+}
+
+
+#Score {
+	width: 146px;
+	height: 20px;
+	margin-top: 9px;
+}
+
+.screen {
+	margin-top: 0;
+	width: 110px;
+	height: 20px;
+	border: 2px solid lightgrey;
+}
+
+#content {
+	position: relative;
+	margin: auto;
+	width: 23%;
+	border: 2px solid lightgrey;
+	border-right: none;
+	border-left: none;
+}
+/* the area you play games */
+.container {
+    margin: 0 auto;
+	padding: 1.5%;
+}
+
+#first {
+	margin-top: 7%;
+}
+
+#last {
+	margin-bottom: 7%
+}
+
+.button {
+	padding: 0 3.3%;
+	margin-left: 2.8%;
+	display: inline;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border: 1px solid grey;
+}
+/* set the radiobox */
+
+#Instructions {
+	width: 643.26px;
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+}
+
+#instructions {
+	font-weight: bold;
+}

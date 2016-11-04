@@ -1,0 +1,202 @@
+/* the wall has some problems when you zoom in or zoom out
+the screen */
+* {
+	font-family: Arial, helvetica, sans-serif;
+}
+
+#headtitle {
+	text-align: center;
+	position: relative;
+}
+
+#title {
+	margin-top: 0;
+	font-size: 30pt;
+}
+/* set the size of the title */
+
+#guide {
+	margin-top: -22px;
+	font-size: 22pt;
+	margin-bottom: 0; 
+}
+
+#tip {
+	text-align: center;
+	height: 65px;
+	position: relative;
+	margin-top: 16px;
+	font-size: 22pt;
+}
+
+#content {
+	width: 560px;
+	height: 324.26px;
+	position: relative;
+	margin: auto;
+}
+/* the area where you play game */
+
+.wall {
+	background-color: #EEEEEE;
+	position: absolute;
+	border: 1px solid black;
+}
+/* set the wall */
+
+#upper-left {
+	width: 173px;
+	height: 50px;
+	border-bottom: none;
+	border-right: none;	
+}
+
+#upper-middle {
+	margin-left: 31%;
+	width: 213px;
+	height: 50px;
+	border-left: none;
+	border-right: none;
+}
+
+#upper-right {
+	margin-left: 69%;
+	width: 175px;
+	height: 50px;
+	border-bottom: none;
+	border-left: none;
+}
+
+#middle-left {
+    margin-top: 9%;
+    width: 173px;
+    height: 165px;
+    border-top: none;
+}
+
+#middle-middle {
+    margin-left: 42%;
+    margin-top: 19%;
+    width: 90px;
+    height: 163px;
+    border-bottom: none;
+}
+
+#middle-right {
+	margin-left: 69%;
+	margin-top: 9%;
+    width: 174px;
+    height: 165px;
+    border-top: none;
+}
+
+#bottom-left {
+    margin-top: 48%;
+    width: 234px;
+    height: 50px;
+    border-right: none;
+}
+
+#bottom-middle {
+    margin-top: 48%;
+    margin-left: 42%;
+    width: 91px;
+    height: 51px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+#bottom-right {
+    margin-top: 48%;
+    margin-left: 58%;
+    width: 237px;
+    height: 50px;
+    border-left: none;
+}
+
+/* set the position of different walls */
+
+#start {
+    background-color: #00FF00;
+    position: absolute;
+    margin-top: 40%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: arial;
+    font-size: 27pt;
+}
+/* set the start block */
+
+#end {
+	background-color: #CC99FF;
+	position: absolute;
+    margin-top: 40%;
+    margin-left: 93%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    font-family: arial;
+    font-size: 27pt;
+}
+/* set the end block */
+
+.path {
+	position: absolute;
+	border: none;
+}
+
+#p1 {
+	width: 190px;
+	height: 53px;
+	margin-top: 38.3%;
+    margin-left: 8%;
+}
+
+#p2 {
+	width: 61px;
+	height: 161px;
+	margin-top: 9.3%;
+    margin-left: 31%;
+}
+
+#p3 {
+	width: 149px;
+	height: 53px;
+	margin-top: 9.3%;
+    margin-left: 42%;
+}
+
+#p4 {
+	width: 59px;
+	height: 161px;
+	margin-top: 19%;
+    margin-left: 58.1%;
+}
+
+#p5 {
+	width: 132px;
+	height: 51px;
+	margin-top: 38.6%;
+    margin-left: 69.1%;
+}
+/* set the paths and make them invisible */
+
+#rule {
+	width: 643.26px;
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+}
+
+#example {
+	position: relative;
+	width: 150px;
+	height: 30px;
+	margin: auto;
+	background-color: #EEEEEE;
+	border: 1px solid black;
+}

@@ -1,0 +1,33 @@
+table,th,td {
+	border: 1px solid lightgrey;
+}
+
+table {
+	font-family: arial, helvetica, sans-serif;
+	border-collapse:collapse;
+	text-align: left;
+	width: 40%;
+}
+
+th {
+	background-color: #021B7E;
+	color: #FEFDFF;
+}
+
+.selected1, .selected2 {
+	background-color: #A3B0FC;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.selected1 {
+	background-image: url(ascend.png);
+}
+
+.selected2 {
+	background-image: url(descend.png);
+}
+
+.alternate { 
+	background-color: lightgrey;
+}

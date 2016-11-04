@@ -1,0 +1,94 @@
+/* I did not use panda.jpg because there are too many white parts
+which can influence the effects of the puzzles */
+
+h1 {
+	font-size: 20pt;
+	margin: auto;
+	margin-top: 20px;
+	text-align: center;
+}
+/* title */
+
+#Content {
+	width: 352px;
+	margin: auto;
+}
+
+#imgContent {
+	height: 352px;
+	width: 352px;
+	margin: auto;
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid black;
+}
+/* an area putting the puzzles */
+
+.block {
+	border: 1px solid white;
+	height: 88px;
+	width: 88px;
+	position: absolute;
+}
+/* set each blcok(including blank) */
+
+.puzzle {
+	background-image: url("picture.jpg");
+}
+
+.puzzle:hover {
+	-webkit-transform: scale(1.05);
+	transition: all 0.1s;
+}
+
+.row1 {
+	margin-top: 0%;
+}
+
+.row2 {
+	margin-top: 25%;
+}
+
+.row3 {
+	margin-top: 50%;
+}
+
+.row4 {
+	margin-top: 75%;
+}
+
+.column1 {
+	margin-left: 0%;
+}
+
+.column2 {
+	margin-left: 25%;
+}
+
+.column3 {
+	margin-left: 50%;
+}
+
+.column4 {
+	margin-left: 75%;
+}
+/* set the position of each puzzle */
+
+#buttonContent {
+	width: 352px;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+/* set the part of putting the start button */
+
+button {
+	background-color: #4285F4;
+	border: 1px solid lightgrey;
+	font-size: 12pt;
+	height: 28px;
+	width: 88px;
+	margin-top: 20px;
+}
+/* set the start button */
