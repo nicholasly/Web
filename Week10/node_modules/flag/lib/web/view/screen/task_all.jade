@@ -1,0 +1,26 @@
+extends ../layout/frame
+block content
+	.container
+		ul.nav.nav-pills
+			li
+				a(href="/task") 进行中
+			li.active
+				a(href="/task/all") 全部
+			li
+				a(href="/task/add") 新建
+		table.table.table-bordered.table-hover
+			thead
+				tr
+					th 任务名
+					th 状态
+					th 操作
+			tbody
+				- each task in tasklist
+					tr
+						td
+							a(href="/task/detail?task=#{task.path}") #{task.detail.taskname}
+						td #{task.path}
+						td
+							a.async(href="/task/finish?task=#{task.path}") 完成
+				
+

@@ -1,0 +1,36 @@
+extends ../layout/frame
+block content
+	.container
+		ul.nav.nav-pills
+			li
+				a(href="/task") 进行中
+			li
+				a(href="/task/all") 全部
+			li.active
+				a(href="/task/add") 新建
+		form#addTask.well(action="/task/add")
+			label(for="taskname") 需求名称：
+			input#taskname(type="text",name="taskname")
+			
+			button#submit(type="submit") 确定
+			
+	script(src="/static/kissy-min.js")
+	script
+		KISSY.ready(function(){
+			var S = KISSY,
+				E = S.Event,
+				D = S.DOM,
+				IO = S.IO;
+			E.on('#addTask','submit',function(e){
+				e.halt();
+				IO.getScript("/task/create?taskname=" + D.get("#taskname").value + "&callback=addTaskHandler");
+			})
+		});
+		function addTaskHandler(result){
+			if(result.state === "success"){
+				alert("新建成功！");
+			}else{
+				alert(result.msg);
+			}
+		}
+		

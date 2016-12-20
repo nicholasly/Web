@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	div.userBlock
+		form(method='post' action='')
+			div.header
+				h1 用户登录
+			
+			div.sep
+				p.error #{error}
+			
+			div.inputs
+				div.username
+					label(for='username') 用户名
+					input(id='username' name='username' placeholder="请输入用户名")
+
+				div.password
+					label(for='password') 密码
+					input(id='password' type="password" name='password' placeholder="请输入密码")
+
+				a.switch(href='/regist') 没有账户？
+				input.submit(type="submit" value="登录")
+				
+	script(type="text/javascript" src="/javascripts/validation.js")
+	script(type="text/javascript" src="/javascripts/signup.js")

@@ -1,0 +1,43 @@
+extends layout
+
+block content
+	div.userBlock
+		form(method='post' action='')
+			div.header
+				h1 用户注册
+			
+			div.sep
+				p.error #{error}
+
+			div.inputs
+				div.username
+					label(for='username') 用户名
+					input(id='username' name='username' placeholder="请输入用户名" value=user.username)
+
+				div.id
+					label(for='id') 学号
+					input(id='id' name='id' placeholder="请输入学号" value=user.id)
+
+				div.password
+					label(for='password') 密码
+					input(id='password' type="password" name='password' placeholder="请输入密码" value=user.password)
+
+				div.recheck
+					label(for='recheck') 确认密码
+					input(id='recheck' type="password" name='recheck' placeholder="请再次输入密码" value=user.recheck)
+
+				div.phone
+					label(for='phone') 电话
+					input(id='phone' name='phone' placeholder="请输入电话号码" value=user.phone)
+
+				div.email
+					label(for='email') 邮箱
+					input(id='email' name='email' placeholder="请输入邮箱地址" value=user.email   )
+
+				a.switch(href='/signin') 已有账户？
+				input.button.reset(type="reset" value="清除")
+				input.button.submit(type="submit" value="提交")
+				
+	script(type="text/javascript" src="/javascripts/validation.js")
+	script(type="text/javascript" src="/javascripts/signup.js")
+	

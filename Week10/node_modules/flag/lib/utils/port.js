@@ -1,0 +1,42 @@
+var exec = require("child_process").exec;
+
+//多尝试几个端口，防止某些端口被占用
+var portList = [8000,8001,8002,8003,8005,8006,8007,8008,8009];
+
+var i = 0;
+
+//可用端口池
+var usablePort = [];
+
+var cachePort = function(){
+		if(portList[i]){
+			exec("netstat -aon|findstr "+portList[i],function (error, stdout, stderr) {
+				if(stdout ==''){
+					usablePort.push(portList[i]);
+				}
+				i++;
+				setTimeout(cachePort,10);
+			});
+		}
+	};
+cachePort();
+
+
+var TRYCOUNT = 100;
+var trys = 0;
+module.exports = {
+	pop : function(callback){
+		trys++;
+		var port = usablePort.pop();
+		if(port){
+			callback(port);
+		}else{
+			if(trys < TRYCOUNT){
+				var _self = this;
+				setTimeout(function(){_self.pop(callback)},100);
+			}else{
+				console.log("无可用端口");
+			}
+		}		 
+	}
+}

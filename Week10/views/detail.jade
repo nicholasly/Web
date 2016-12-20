@@ -1,0 +1,29 @@
+extends layout
+
+block content
+	div.userBlock
+		form(method='post' action='')
+			div.header
+				h1 用户详情
+			
+			div.sep
+				p.error #{error}
+
+			div.inputs
+				div.username
+					label(for='username') 用户名
+					input(id='username' name='username'  disabled="disabled" value=user.username)
+
+				div.id
+					label(for='id') 学号
+					input(id='id' name='id'  disabled="disabled" value=user.id)
+
+				div.phone
+					label(for='phone') 电话
+					input(id='phone' name='phone'  disabled="disabled" value=user.phone)
+
+				div.email
+					label(for='email') 邮箱
+					input(id='email' name='email'  disabled="disabled" value=user.email)
+
+			a.switch(href='/signout') 注销账户

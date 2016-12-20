@@ -1,0 +1,67 @@
+var exec = require("child_process").exec;
+var fs = require("fs");
+var dir = require("./utils/dir");
+
+var root = "d:/work/FIDE";
+
+var taskname = "taskA";
+
+var svnUrl = "http://svn.app.taobao.net/repos/cart/trunk/cart/assets/mini";
+
+var svnPtn = /^http\:\/\/svn\.app\.taobao\.net\/repos\/(\w+)\/(trunk|branches\/\w+)\/\w+\/assets\/([\w\/]+)$/;
+
+
+function getSvnPath(svnUrl){
+	if(!svnPtn.test(svnUrl)){
+		console.log('hear');
+		return;
+	}else{
+		var result = svnUrl.match(svnPtn);
+		return {"appname" : result[1], "path": result[3]}
+	}
+}
+
+function preZero(num){
+	if(num < 10){
+	   return "0" + num;
+	}else{
+		return num;
+	}
+}
+
+function svnCheck(path,svnUrl){
+	process.chdir(path+"/..");
+	exec("svn checkout " + svnUrl,function(err,stdout,stderr){
+	//exec("rmdir mini",function(err,stdout,stderr){
+	//exec("svn help",function(err,stdout,stderr){
+		if(!err){
+			console.log("svn checkout ok");
+		}else{
+			console.log(err)
+		}
+	});
+}
+
+exports = module.exports = function(svn){
+
+	var now = new Date();
+
+	var timeStamp = "" + now.getFullYear() + preZero(parseInt(now.getMonth()) + 1); 
+
+	var path = root + "/" + timeStamp + '/' + taskname;
+
+	var svnPath = getSvnPath(svn);
+
+	var localPath = path + "/assets/" + svnPath.path;
+
+	dir.create(localPath);
+
+	svnCheck(localPath,svn);
+
+	console.log(localPath);
+
+	
+//	exec()
+}
+
+exports(svnUrl);
