@@ -51,7 +51,7 @@ function judgeSolve(a) {
 	var sum = 0;
 	for (var i = 0; i < 14; i++) {
 		for (var j = i + 1; j < 15; j++) {
-			if (a[i] < a[j]) sum++;
+			if (a[i] > a[j]) sum++;
 		}
 	}
 	return (sum % 2 == 0);
